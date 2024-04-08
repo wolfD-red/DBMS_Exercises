@@ -154,7 +154,10 @@ void Login(string ID, string passwordd) {
             for (int i = 0; i < User_record; i++) {
                 if (storage_data[i][6] == ID && storage_data[i][7] == passwordd) {
                     userFound = true; // Set flag if user is found
-                    Login_Success();
+                    cout << "\n\n\nHello, ";
+                    cout << storage_data [i][0];
+                    cout << "!\n";
+                    Login_Success ();
                     return;
                 }
             }
@@ -169,8 +172,6 @@ void Login(string ID, string passwordd) {
    
 void Login_Success (){
     int logoutchoice;
-
-    cout << "Hello!";
     cout << "\n";
     cout << "\n";
     cout << "\n";
